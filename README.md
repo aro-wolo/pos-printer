@@ -1,9 +1,13 @@
 # pos-printer
 
-![Go Version](https://img.shields.io/badge/Go-1.16%2B-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
-![Go Report Card](https://goreportcard.com/badge/github.com/yourusername/pos-printer)
-![Code Coverage](https://img.shields.io/codecov/c/github/yourusername/pos-printer)
+![GitHub Repo stars](https://img.shields.io/github/stars/aro-wolo/pos-printer?style=social)
+![GitHub last commit](https://img.shields.io/github/last-commit/aro-wolo/pos-printer)
+![GitHub issues](https://img.shields.io/github/issues/aro-wolo/pos-printer)
+![GitHub contributors](https://img.shields.io/github/contributors/aro-wolo/pos-printer)
+[![Go Report Card](https://goreportcard.com/badge/github.com/aro-wolo/pos-printer)](https://goreportcard.com/report/github.com/aro-wolo/pos-printer)
+[![codecov](https://codecov.io/gh/aro-wolo/pos-printer/branch/main/graph/badge.svg)](https://codecov.io/gh/aro-wolo/pos-printer)
+![Go Module](https://img.shields.io/github/go-mod/go-version/aro-wolo/pos-printer)
+[![License](https://img.shields.io/github/license/aro-wolo/pos-printer.svg)](https://github.com/aro-wolo/pos-printer/blob/main/LICENSE)
 
 ## Overview
 
