@@ -13,6 +13,18 @@ import (
 	"github.com/joho/godotenv"
 )
 
+// Color constants
+const (
+	Reset  = "\033[0m"
+	Red    = "\033[31m"
+	Green  = "\033[32m"
+	Yellow = "\033[33m"
+	Blue   = "\033[34m"
+	Purple = "\033[35m"
+	Cyan   = "\033[36m"
+	White  = "\033[37m"
+)
+
 var tokenCache = struct {
 	Token  string
 	Expiry time.Time
@@ -160,7 +172,7 @@ func loadTemplate(filename string) (string, error) {
 
 func printReceipt(orderData *OrderResponse) {
 	if orderData == nil || orderData.Err {
-		fmt.Println("Error: Invalid order data")
+		fmt.Println(Red + "Error: Invalid order data" + Reset)
 		return
 	}
 
@@ -194,7 +206,7 @@ func printReceipt(orderData *OrderResponse) {
 
 	footerTemplate, err := loadTemplate("footer_template.txt")
 	if err != nil {
-		fmt.Println("Error loading footer template:", err)
+		fmt.Println(Red+"Error loading footer template:"+Reset, err)
 		return
 	}
 
@@ -211,24 +223,24 @@ func printReceipt(orderData *OrderResponse) {
 	)
 
 	printToDefaultPrinter(receipt)
-	fmt.Println(receipt)
+	fmt.Println(Green + receipt + Reset)
 }
 
 func main() {
 	for {
-		fmt.Print("Enter the order ID: ")
+		fmt.Print(Cyan + "Enter the order ID: " + Reset)
 		var orderID string
 		fmt.Scan(&orderID)
 
 		token, err := getToken()
 		if err != nil {
-			fmt.Println("Error getting token:", err)
+			fmt.Println(Red+"Error getting token:"+Reset, err)
 			continue
 		}
 
 		orderData, err := fetchOrder(token, orderID)
 		if err != nil {
-			fmt.Println("Error fetching order:", err)
+			fmt.Println(Red+"Error fetching order:"+Reset, err)
 			continue
 		}
 
