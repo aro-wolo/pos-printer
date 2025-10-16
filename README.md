@@ -8,7 +8,7 @@
 [![codecov](https://codecov.io/gh/aro-wolo/pos-printer/branch/main/graph/badge.svg)](https://codecov.io/gh/aro-wolo/pos-printer)
 ![Go Module](https://img.shields.io/github/go-mod/go-version/aro-wolo/pos-printer)
 [![License](https://img.shields.io/github/license/aro-wolo/pos-printer.svg)](https://github.com/aro-wolo/pos-printer/blob/main/LICENSE)
-
+[![Watch on YouTube](https://img.shields.io/badge/Watch-YouTube-red?logo=youtube)](https://www.youtube.com/live/4CQ5sOPGNhM?si=IkfDB4sqVjGG98L8)
 
 
 ## Overview
