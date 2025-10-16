@@ -9,6 +9,8 @@
 ![Go Module](https://img.shields.io/github/go-mod/go-version/aro-wolo/pos-printer)
 [![License](https://img.shields.io/github/license/aro-wolo/pos-printer.svg)](https://github.com/aro-wolo/pos-printer/blob/main/LICENSE)
 
+
+
 ## Overview
 
 `pos-printer` is a Go application designed to fetch order details from an API and print a formatted receipt on a thermal printer. It uses environment variables for configuration and supports token-based authentication.
